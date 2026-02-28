@@ -1,0 +1,372 @@
+
+/*main styles*/
+.skills-main{
+    display: flex;
+    flex-direction: row;
+    padding: 2em;
+    background-image: url('./public/images/skills.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #333;
+}
+.skills-main .starter{
+    width: 65%;
+    height:35em;
+    margin-top: 10px;
+    padding: 0.5em;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background: #c9d3d0;
+    position: relative;
+    border-radius: 20px;
+    opacity: 0.9;
+}
+.skills-main [class = "starter contact-starter"]{
+    background: #c9d3d0;
+}
+
+/*box-1 styles*/
+[class="box 1"] h1 [class="fa-brands fa-superpowers"]{
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    padding: 0.5em;
+    border-radius: 30px;
+    background: linear-gradient(-45deg, #cabfbd, #4c4c57, #e3dcd2, #4c4c57);
+    background-size: 400% 400%;
+    animation: gradient 10s infinite ease-in-out;
+    animation: rotate 5s linear infinite;
+}
+
+/*mini-box styles*/
+.widgets{
+    width: 30%;
+    height: 34em;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 0.5em;
+    background-color: #4c4c57;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    grid-template-rows: 10em 10em 12em;
+    opacity: 0.9;
+    position: relative;
+
+}
+.widgets:hover{
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+    z-index: 1;
+    opacity: 1;
+}
+
+/*starter styles*/
+
+
+
+.image-widget  .image-profile{
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+    border: solid 2px white;
+    position: absolute;
+    top:3%;
+    left: 60%;
+}
+
+.widgets .image-widget .image-profile img{
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+    object-fit: cover;
+    
+}
+
+.widgets .image-widget .division{
+    width: 100%;
+}
+
+.widgets .image-widget [class="division 1"]{
+    height: 100%;
+    background-color: #e3dcd2;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: auto;
+}
+
+.widgets .image-widget [class="division 1"] .about-icon{
+    width: fit-content;
+    height: 20px;
+    margin: 10px 0 0 ;
+    padding: 0.5em;
+    border-radius: 30px;
+    margin-left: 0.5em;
+    background: linear-gradient(-45deg, #cabfbd, #4c4c57, #e3dcd2, #4c4c57);
+    background-size: 400% 400%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    animation: gradient 10s infinite ease-in-out;
+}
+
+
+.widgets .box{
+    background-color: #f0f0f0;
+    display:block;
+    padding: 0.5em;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    border-radius: 8px;
+}
+.widgets .box:hover{
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+    z-index: 2;
+}
+
+.widgets [class="box 2"]{
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+
+
+.widgets [class="box 3"]{
+    grid-row-start: 3;
+}
+/*skills panel styles*/
+
+.skills-panel{
+    display: flex;
+    height: 20em;
+    width: 80%;
+    padding: 2em;
+    align-self: center;
+    justify-self: center;
+    align-items: center;
+    margin-top: 3em;
+}
+
+.tech, .health{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    padding: 2em;
+    font-weight: bolder;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.tech{
+    background-color: rgb(57, 56, 71);
+    margin-right: 5px;
+}
+.tech:hover{
+    cursor:pointer;
+    z-index: 2;
+    animation: goDown 1s forwards 1 ease-in-out;
+}
+.health{
+    background-color: rgb(78, 36, 66);
+}
+.health:hover{
+    cursor:pointer;
+    z-index: 2;
+    animation: goUp 1s forwards 1 ease-in-out;
+}
+
+/*experience panel styles*/
+#experience-header i{
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    padding: 0.5em;
+    border-radius: 30px;
+    animation: alternateBetween 5s linear infinite;
+}
+#experience-header i:first-child{
+    animation-delay: 0s;
+}
+#experience-header i:nth-child(2){
+    animation-delay: 3s;
+    transform: translate(-60px);
+}
+article{
+    width: 80%;
+    height: 20em;
+    background-color: #c9d3d0;
+    padding: 0.5em;
+    margin-top: 1em;
+    border-radius: 20px;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    justify-self: center;
+    color: white;
+    font-size: large;
+    box-shadow: rgba(0, 0, 0, 0.35) 15px 10px 20px 15px;
+}
+article:hover{
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+    z-index: 2;
+}
+
+
+/*contact panel styles*/
+.contact-panel{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 7em 7em 8em;
+    height: 20em;
+    width: 80%;
+    padding: 2em;
+    gap: 1em;
+}
+
+.contact-box{
+    background-color: #f0f0f0;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0.5em;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    border-radius: 8px;
+    opacity: 0.8;
+}
+
+
+.contact-box:nth-child(1){
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    background-image: url(./public/images/whatsApp.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.contact-box:nth-child(2){
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    background-image: url(./public/images/email.jpg);
+    background-size: cover;
+    background-position: center;
+}   
+    .contact-box:nth-child(3){
+    grid-column-start: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-image: url(./public/images/linkedIn.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.contact-box:nth-child(4){
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    background-image: url(./public/images/snapchat.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+[class="starter contact-starter"] [class="box 1"] h1, #experience-header, .starter [class="box 1"] h1{
+    font-size: 24px;
+    width: fit-content;
+    font-weight: bold;
+    color: #333;
+    padding: 0.5em;
+    border-radius: 30px;
+    background: linear-gradient(-45deg, #cabfbd, #4c4c57, #e3dcd2, #4c4c57);
+    background-size: 400% 400%;
+    animation: gradient 10s infinite ease-in-out;
+}
+/*animation styles*/
+@keyframes gradient{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes goDown {
+    0% {
+        transform: translate(0px,0px);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(20px,40px);
+        opacity: 1;
+    }
+}
+@keyframes goUp {
+    0% {
+        transform: translate(0,0);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-20px,-40px);
+        opacity: 1;
+    }
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    12.5%{
+        transform: rotate(45deg);
+    }
+    25% {
+        transform: rotate(90deg);
+    }
+    37.5%{
+        transform: rotate(135deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    62.5%{
+        transform: rotate(225deg);
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+    87.5%{
+        transform: rotate(315deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes alternateBetween {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+
+}
