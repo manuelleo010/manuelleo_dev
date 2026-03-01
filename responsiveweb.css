@@ -56,7 +56,7 @@
     background-image: none;
     }
     .mini-boxes .box{
-    font-size: 14;
+    font-size: 14px;
     }
     
     footer{
@@ -114,6 +114,9 @@
     padding: 0.5em;
     align-self: center;
     grid-template-rows: 10em 10.5em 12.5em;
+    }
+    .widgets .box{
+    font-size: 14px
     }
     /*experience tab styles*/
     #experience-header i{
