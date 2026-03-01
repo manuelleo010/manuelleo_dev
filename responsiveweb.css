@@ -15,10 +15,11 @@
     .nav-links{
     position: absolute;
     top: 1em;
-    left: 75%;
+    left: 72%;
     width: 100px;
     height: fit-content;
     text-align: center;
+    line-height: 2em;
     opacity: 0.9;
     background-color: #333;
     border-radius: 20px;
@@ -94,6 +95,7 @@
     height: fit-content;
     width: 80%;
     padding: 0;
+    margin: auto;
     padding-bottom: 0.5em;
     margin-top: 1em;
     }
