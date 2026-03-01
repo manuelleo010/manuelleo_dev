@@ -95,7 +95,7 @@
     }
 
     .tech, .health{
-    width: 0%;
+    width: 100%;
     height: 50%;
     }
     
@@ -121,6 +121,9 @@
     article{
     width: 80%;
     height: fit-content;
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 0;
     }
     /*contact tab styles*/
     .contact-panel{
