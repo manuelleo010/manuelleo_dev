@@ -55,6 +55,10 @@
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
     background-image: none;
     }
+    .mini-boxes .box{
+    font-size: 14;
+    }
+    
     footer{
     display: flex;
     flex-wrap: wrap;
